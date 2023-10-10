@@ -1,0 +1,176 @@
+@use "./config/variables" as v;
+@use "./common" as c;
+
+h2.sp_ttl {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 82px;
+}
+.profile_wrap {
+    margin-bottom: 100px;
+    h1 {
+        img {
+            width: 86px;
+            margin-bottom: 70px;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    span.profile_ttl_sp {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        color: #B4B4B4;
+        margin-bottom: 40px;
+    }
+    ul {
+        li {
+            font-size: clamp(14px,1.8rem,18px);
+            letter-spacing: 0.05em;
+            line-height: 30px;
+            margin-bottom: 23px;
+            a {
+                color: #000;
+            }
+            @media screen and (max-width: 768px) {
+                font-weight: 500;
+                &:first-child {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+}
+section {
+    h2 {
+        margin-bottom: 40px;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+        @media screen and (max-width: 768px) {
+            color: #B4B4B4;
+        }
+    }
+}
+
+.story_wrap {
+    margin-bottom: 180px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+    h2 {
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+        @media screen and (max-width: 768px) {
+            color: #B4B4B4;
+        }
+    }
+    p {
+        font-size: clamp(14px,1.8rem, 18px);
+        letter-spacing: 0.05em;
+        line-height: 160%;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.price_wrap {
+    width: 100vw;
+    background-color: #F5F5F5;
+    padding: 180px 0 120px 0;
+    @media screen and (max-width: 768px) {
+        padding: 80px 0 20px 0;
+        .main_content {
+            margin-top: 0;
+        }
+    }
+    dl {
+        margin-bottom: 60px;
+        dt {
+            font-size: clamp(16px,2rem,20px);
+            letter-spacing: 0.05em;
+            margin-bottom: 40px;
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+            span {
+                display: inline-block;
+                background-color: #000;
+                color: #fff;
+                font-size: clamp(16px,2rem,20px);
+                letter-spacing: 0.05em;
+                margin-right: 20px;
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        dd {
+            font-size: clamp(14px,1.8rem,18px);
+            color: #989898;
+            letter-spacing: 0.05em;
+            line-height: 150%;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.contact {
+    padding-top: 180px;
+    @media screen and (max-width: 768px) {
+        padding-top: 80px;
+        .main_content {
+            margin-top: 0;
+        }
+    }
+    dl {
+        margin-bottom: 30px;
+        dt {
+            font-size: clamp(14px,1.6rem,16px);
+            letter-spacing: 0.1em;
+            padding-bottom: 3px;
+        }
+        dd {
+            width: 100%;
+            input {
+                width: 50%;
+                font-size: clamp(14px,1.6rem,16px);
+                padding: 8px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+            textarea {
+                width: 50%;
+                font-size: clamp(14px,1.6rem,16px);
+                padding: 8px;
+                border: 1px solid #000;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .main_content {
+        width: 84.615%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .main_container {
+        width: 100%;
+    }
+}

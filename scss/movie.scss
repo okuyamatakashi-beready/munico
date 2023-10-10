@@ -1,0 +1,438 @@
+@use "./config/variables" as v;
+@use "./common" as c;
+h2.sp_ttl {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    span {
+        color: #B4B4B4;
+    }
+}
+@media screen and (max-width: 768px) {
+    .tax_ttl {
+        width: 83.5%;
+        margin: 0 auto 30px auto;
+    }
+}
+
+.work_list {
+    margin-bottom: 130px;
+    @media screen and (max-width: 768px) {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    ul {
+        li {
+            @include v.bg;
+            box-sizing: border-box;
+            padding-top: 60px;
+            padding-bottom: 70px;
+            padding-left: 70px;
+            width: 100%;
+            margin-bottom: 50px;
+            position: relative;
+            @media screen and (max-width: 768px) {
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 20px;
+            }
+            a {
+                color: #fff;
+                h3 {
+                    span {
+                        font-size: clamp(26px, 5.2rem,52px);
+                        display: block;
+                        font-weight: normal;
+                        letter-spacing: 0.05em;
+                        line-height: 1;
+                    }
+                    small {
+                        font-size: clamp(14px,1.8rem,18px);
+                        display: block;
+                        letter-spacing: 0.05em;
+                        font-weight: 400;
+                        @media screen and (max-width: 768px) {
+                            font-size: 11px;
+                        }
+                    }
+                }
+
+                .work_txt {
+                    padding-top: 176px;
+                    @media screen and (max-width: 768px) {
+                        padding-top: 63px;
+                    }
+                    p {
+                        font-size: 15px;
+                        letter-spacing: 0.05em;
+                        line-height: 2;
+                        margin-bottom: 18px;
+                        @media screen and (max-width: 768px) {
+                            font-size: 11px;
+                            line-height: 18px;
+                        }
+                    }
+                    span {
+                        font-size: 14px;
+                        letter-spacing: 0.1em;
+                        line-height: 1;
+                        @media screen and (max-width: 768px) {
+                            font-size: 11px;
+                        }
+                    }
+                }
+                .work_list_num {
+                    position: absolute;
+                    font-size: clamp(20px,2.6rem,26px);
+                    letter-spacing: 0.05em;
+                    right: 70px;
+                    bottom: 66px;
+                    @media screen and (max-width: 768px) {
+                        font-size: 26px;
+                        right: 20px;
+                        bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+li.movie_promotion {
+    background-image: url(../images/movie/promotion_img.jpg);
+}
+
+.tax_container {
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+.movie_work_list {
+    @media screen and (max-width: 768px) {
+        width: 83.5%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    ul {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            width: 32.116%;
+            margin-bottom: 30px;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            a {
+                div.thumbnail {
+                    width: 100%;
+                    padding: 27.608% 0;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    transition: all 0.1s;
+                    box-sizing: border-box;
+                    
+                    &:hover {
+                        background-size: 110%;
+                        outline: 2px solid #000;
+                        outline-offset: -2px;
+                    }
+                }
+                h3 {
+                    font-size: 14px;
+                    letter-spacing: 0.05em;
+                    line-height: 30px;
+                    color: #000;
+                    font-weight: 500;
+                    @media screen and (max-width: 768px) {
+                        font-size: 12px;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+.photo_work_list {
+    ul {
+        justify-content: flex-start;
+        @media screen and (max-width: 768px) {
+            width: 84.615%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        li {
+            margin-right: 1.826%;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            @media screen and (max-width: 768px) {
+                width: 48%;
+                margin-right: 0;
+            }
+            a {
+                div.thumbnail {
+                    padding: 70.5% 0;
+                }
+                @media screen and (max-width: 768px) {
+                    h3 {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagenation {
+    margin-top: 70px;
+}
+
+.works_post {
+    .works_movie {
+        iframe {
+            width: 100%;
+            height: 40vw;
+            margin-bottom: 100px;
+            @media screen and (max-width: 768px) {
+                width: 100vw;
+                margin-left: -9%;
+                height: 60vw;
+                margin-bottom: 45px;
+            }
+        }
+    }
+
+    .works_info {
+        .works_ttl {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #000;
+            margin-bottom: 50px;
+            @media screen and (max-width: 768px) {
+                padding-bottom: 20px;
+                margin-bottom: 30px;
+                position: relative;
+                span {
+                    text-align: right;
+                    display: block;
+                    width: 100%;
+                    position: absolute;
+                    top: -35px;
+                    right: 0;
+                }
+            }
+            h3 {
+                font-size: clamp(16px,2rem,20px);
+                letter-spacing: 0.05em;
+                font-weight: normal;
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                    display: block;
+                    line-height: 150%;
+                    width: 100%;
+                }
+            }
+            span {
+                a {
+                    color: #000;
+                    font-size: 16px;
+                    letter-spacing: 0.05em;
+                    font-weight: 500;
+                    @media screen and (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .works_detail {
+            p {
+                font-size: clamp(14px,1.8rem,18px);
+                letter-spacing: 0.05em;
+                line-height: 30px;
+                margin-bottom: 50px;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }       
+            }
+            span {
+                font-size: clamp(14px,1.8rem,18px);
+                letter-spacing: 0.05em;
+                @media screen and (max-width: 768px) {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+.other_list {
+    width: 100vw;
+    margin-right: -8.334%;
+    @media screen and (max-width: 768px) {
+        margin-left: -9%;
+    }
+    .other_list_wrap {
+        background-color: #F5F5F5;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-top: 200px;
+        margin-bottom: 180px;
+        @media screen and (max-width: 768px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .other_list_inner {
+            width: 68.75%;
+            margin-left: 22.395%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto; 
+            }
+            h4 {
+                font-size: 16px;
+                font-weight: normal;
+                letter-spacing: 0.05em;
+                margin-bottom: 30px;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                    width: 84.615%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            ul {
+
+                li {
+                    width: 32.116%;
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        margin-right: 0.8%;
+                    }
+                    a {
+                        div.thumbnail {
+                            width: 100%;
+                            padding: 27.608% 0;
+                            @include v.bg;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*********************************
+	work_list
+*********************************/
+li.look_promotion {
+    background-image: url(../images/photo/look.jpg);
+}
+li.salonmodel_promotion {
+    background-image: url(../images/photo/salonmodel.jpg);
+}
+li.product_promotion {
+    background-image: url(../images/photo/product.jpg);
+}
+li.wedding_promotion {
+    background-image: url(../images/photo/wedding.jpg);
+}
+li.creative_promotion {
+    background-image: url(../images/photo/creative.jpg);
+}
+li.staff_promotion {
+    background-image: url(../images/photo/staff.jpg);
+}
+li.salon_promotion {
+    background-image: url(../images/photo/salon.jpg);
+}
+
+li.movie_promotion {
+    background-image: url(../images/movie/movie_promotion.jpg);
+}
+li.movie_interview {
+    background-image: url(../images/movie/movie_interview.jpg);
+}
+li.movie_seminar {
+    background-image: url(../images/movie/movie_seminar.jpg);
+}
+li.movie_crosstalk {
+    background-image: url(../images/movie/movie_crosstalk.jpg);
+}
+li.movie_recruit {
+    background-image: url(../images/movie/movie_recruit.jpg);
+}
+li.movie_reel {
+    background-image: url(../images/movie/movie_reel.jpg);
+}
+li.movie_youtube {
+    background-image: url(../images/movie/movie_youtube.jpg);
+}
+li.movie_wedding {
+    background-image: url(../images/movie/movie_wedding.jpg);
+}
+li.movie_close-coverage {
+    background-image: url(../images/movie/movie_close-coverage.jpg);
+}
+li.movie_entertainment {
+    background-image: url(../images/movie/movie_entertainment.jpg);
+}
+
+
+
+/*********************************
+	photo 詳細
+*********************************/
+.works_photo {
+    margin-bottom: 100px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+    ul.photo_list {
+        flex-wrap: wrap;
+        li.vertical {
+            width: 50%;
+            .photo_thumb {
+                padding: 74.2% 0;
+                @include v.bg;
+            }
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        li.wide {
+            width: 100%;
+            .photo_thumb {
+                padding: 25% 0;
+                @include v.bg;
+                @media screen and (max-width: 768px) {
+                    padding: 35% 0;
+                }
+            }
+            
+        }
+    }
+
+    ul.photo_wide_list {
+        li {
+            width: 100%;
+            .wide_thumb {
+                // padding: 36.2% 0;
+                padding: 25% 0;
+                @include v.bg;
+                @media screen and (max-width: 768px) {
+                    padding: 35% 0;
+                }
+            }
+        }
+    }
+}

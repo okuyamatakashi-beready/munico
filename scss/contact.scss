@@ -1,0 +1,56 @@
+@use "./config/variables" as v;
+@use "./common" as c;
+
+h2.sp_ttl {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+section {
+    h2 {
+        margin-bottom: 40px;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+    }
+}
+.contact {
+    padding-top: 0px;
+    dl {
+        margin-bottom: 30px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        dt {
+            font-size: clamp(14px,1.6rem,16px);
+            letter-spacing: 0.1em;
+            padding-bottom: 3px;
+        }
+        dd {
+            input {
+                width: 50%;
+                font-size: clamp(14px,1.6rem,16px);
+                padding: 8px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    box-sizing:border-box;
+                }
+            }
+            textarea {
+                width: 50%;
+                font-size: clamp(14px,1.6rem,16px);
+                padding: 8px;
+                border: 1px solid #000;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    box-sizing: border-box;
+
+                }
+            }
+        }
+    }
+}

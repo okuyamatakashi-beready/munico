@@ -1,0 +1,12 @@
+@use "./config/variables" as v;
+@use "./common" as c;
+
+.top_border,
+.bottom_border,
+.right_border,
+.left_border {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    
+}
