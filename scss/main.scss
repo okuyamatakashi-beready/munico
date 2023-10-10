@@ -2,7 +2,6 @@
 @use "./common" as c;
 main {
     position: relative;
-    height: 100vh;
 }
 img.top_logo {
     width: 21.1458%;
@@ -19,6 +18,283 @@ img.top_logo {
         height: auto;
     }
 }
+
+/*********************************
+	MOVIE
+*********************************/
+
+.top_container {
+  width: 68.75%;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+      width: 84%;
+  }
+}
+.sec_ttl {
+  text-align: center;
+  margin-bottom: 7rem;
+  span {
+    font-size: clamp(24px,3.2rem,40px);
+    display: block;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+  small {
+    font-size: 14px;
+    display: block;
+    font-weight: normal;
+  }
+}
+a.more_btn {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  font-size: clamp(14px,1.4rem,18px);
+  text-align: center;
+  width: 240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0;
+  letter-spacing: 0.1em;
+  margin-top: 10rem;
+}
+#movie {
+  padding-top: 30rem;
+}
+.movie_work_list {
+  @media screen and (max-width: 768px) {
+      width: 83.5%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  ul {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      li {
+          width: 32.116%;
+          margin-bottom: 30px;
+          @media screen and (max-width: 768px) {
+              width: 49%;
+          }
+          a {
+              div.thumbnail {
+                  width: 100%;
+                  padding: 27.608% 0;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: 100%;
+                  transition: all 0.1s;
+                  box-sizing: border-box;
+                  
+                  &:hover {
+                      background-size: 110%;
+                      outline: 2px solid #000;
+                      outline-offset: -2px;
+                  }
+              }
+              h3 {
+                  font-size: 14px;
+                  letter-spacing: 0.05em;
+                  line-height: 30px;
+                  color: #000;
+                  font-weight: 500;
+                  @media screen and (max-width: 768px) {
+                      font-size: 12px;
+                      font-weight: normal;
+                  }
+              }
+          }
+      }
+  }
+}
+
+
+/*********************************
+	PHOTO
+*********************************/
+#photo {
+  padding-top: 25rem;
+  @media screen and (max-width: 768px) {
+      padding-top: 120px;
+  }
+  .photo_work_list {
+    ul {
+        justify-content: flex-start;
+        @media screen and (max-width: 768px) {
+            width: 84.615%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        li {
+            margin-right: 1.826%;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            @media screen and (max-width: 768px) {
+                width: 48%;
+                margin-right: 0;
+            }
+            a {
+                div.thumbnail {
+                    padding: 70.5% 0;
+                }
+                @media screen and (max-width: 768px) {
+                    h3 {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+
+/*********************************
+	BRAND
+*********************************/
+#brand {
+  padding-top: 25rem;
+  @media screen and (max-width: 768px) {
+      padding-top: 120px;
+  }
+  .brand_list {
+    ul li {
+      width: 32%;
+      a {
+        div.thumbnail {
+          padding: 50% 0;
+        }
+      }
+    }
+  }
+}
+
+/*********************************
+	SALON
+*********************************/
+
+#salon {
+  padding-top: 25rem;
+  @media screen and (max-width: 768px) {
+      padding-top: 120px;
+  }
+  ul.salon_list {
+    li {
+      width: 32%;
+      @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-bottom: 50px;
+      }
+      .salon_thumb {
+        padding-top: 70%;
+        @include v.bg;
+        margin-bottom: 3rem;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px
+        }
+      }
+      .salon_info {
+        h2 {
+          margin-bottom: 1.5rem;
+          font-size: clamp(14px,1.4rem,18px);
+          letter-spacing: 0.05em;
+          font-weight: 500;
+          @media screen and (max-width: 768px) {
+              margin-bottom: 15px;
+          }
+        }
+        span.salon_cat {
+          font-size: clamp(12px,1.4rem,16px);
+          display: block;
+          margin-bottom: 4rem;
+          letter-spacing: 0.05em;
+          @media screen and (max-width: 768px) {
+              margin-bottom: 30px;
+          }
+        }
+        span.salon_address {
+          font-size: clamp(12px,1.4rem,16px);
+          letter-spacing: 0.05em;
+        }
+      }
+      .salon_01 {
+        background-image: url(./../images/salon_list01.jpg);
+      }
+      .salon_02 {
+        background-image: url(./../images/salon_list02.jpg);
+      }
+      .salon_03 {
+        background-image: url(./../images/salon_list03.jpg);
+      }
+    }
+  }
+  .salon_link_wrap {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    img {
+      width: 10%;
+      padding-right: 10px;
+    }
+  }
+}
+
+/*********************************
+	COMPANY
+*********************************/
+#company {
+  padding-top: 25rem;
+  padding-bottom: 25rem;
+  @media screen and (max-width: 768px) {
+      padding-top: 120px;
+  }
+  h1 {
+    text-align: left;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+  }
+  .company_wrap {
+    align-items: flex-start;
+  }
+  .company_info {
+    width: 60%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    dl {
+      font-size: 16px;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      border-bottom: 1px solid #000;
+      letter-spacing: 0.1em;
+      @media screen and (max-width: 768px) {
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+      }
+      dt {
+        width: 20%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+      }
+      dd {
+        width: 80%;
+        line-height: 1.75;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @keyframes fadeInAnime{
     0% {
       opacity: 0;

@@ -6,84 +6,10 @@
 			</a>
 		</div>
 		<div class="ft_wrap flex pc_flex">
-			<dl>
-				<dt><a href="/movie">MOVIE</a></dt>
-				<dd>
-					<ul>
-						<li>
-							<a href="/cat_movie/promotion">- Promotion</a>
-						</li>
-						<li>
-							<a href="/cat_movie/interview">- Interview</a>
-						</li>
-						<li>
-							<a href="/cat_movie/seminar">- Seminar</a>
-						</li>
-						<li>
-							<a href="/cat_movie/crosstalk">- Crosstalk</a>
-						</li>
-						<li>
-							<a href="/cat_movie/recruit">- Recruit</a>
-						</li>
-						<li>
-							<a href="/cat_movie/reel">- Reel</a>
-						</li>
-						<li>
-							<a href="/cat_movie/youtube">- Youtube</a>
-						</li>
-						<li>
-							<a href="/cat_movie/wedding">- Wedding</a>
-						</li>
-						<li>
-							<a href="/cat_movie/closecoverage">- Close coverage</a>
-						</li>
-						<li>
-							<a href="/cat_movie/entertainment">- Entertainment</a>
-						</li>
-					</ul>
-				</dd>
-			</dl>
-			<dl>
-				<dt><a href="/photo">PHOTO</a></dt>
-				<dd>
-					<ul>
-						<li class="">
-							<a href="/cat_photo/look">- Look</a>
-						</li>
-						<li class="">
-							<a href="/cat_photo/salonmodel">- Salon model</a>
-						</li>
-						<li class="">
-							<a href="/cat_photo/product">- Product</a>
-						</li>
-						<li class="">
-							<a href="/cat_photo/wedding">- Wedding</a>
-						</li>
-						<li class="">
-							<a href="/cat_photo/creative">- Creative</a>
-						</li>
-						<li class="">
-							<a href="/cat_photo/staff">- Staff</a>
-						</li>
-						<li class="">
-							<a href="/cat_photo/salon">- Salon</a>
-						</li>
-					</ul>
-				</dd>
-			</dl>
-			<dl>
-				<dt><a href="/seminar">SEMINAR</a></dt>
-				<dd>
-					<ul>
-						<li>
-							<a href="/omc">- mcc</a>
-						</li>
-					</ul>
-				</dd>
-			</dl>
+
 
 			<div class="fixed_insta_link">
-				<a href="" target="_blank">
+				<a href="https://www.instagram.com/munico_625/" target="_blank">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/common/insta_icon.svg" alt="">
 				</a>
 			</div>
