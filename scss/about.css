@@ -766,6 +766,11 @@ h2.sp_ttl {
   text-align: left;
   margin-bottom: 7rem;
 }
+@media screen and (max-width: 768px) {
+  .sec_ttl {
+    margin-bottom: 60px;
+  }
+}
 .sec_ttl span {
   font-size: clamp(24px, 3.2rem, 40px);
   display: block;
@@ -781,16 +786,33 @@ h2.sp_ttl {
 #concept {
   padding-top: 35rem;
 }
+@media screen and (max-width: 768px) {
+  #concept {
+    padding-top: 160px;
+  }
+}
 #concept span.catch {
   font-size: clamp(16px, 1.6rem, 20px);
   letter-spacing: 0.05em;
   display: block;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 768px) {
+  #concept span.catch {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 50px;
+  }
+}
 #concept p {
   font-size: 14px;
   line-height: 1.875em;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  #concept p {
+    font-size: 12px;
+  }
 }
 
 .profile_wrap {
