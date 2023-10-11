@@ -9,6 +9,9 @@ $('#toggle').on('click',function(){
 $('.gnav li a').on('click',function(){
 	$('body').removeClass('open');
 });
+$('#header .sp_nav dl dt a').on('click',function(){
+	$('body').removeClass('open');
+});
 
 
 
@@ -23,7 +26,18 @@ $(function(){
     });
     });
 
-
+    $(document).ready(function() {
+      // 初めに<dd>を非表示にします
+      $("#header .sp_nav dl.active dd").hide();
+  
+      $("#header .sp_nav dl.active dt").click(function() {
+          // このdtの次のdd要素をトグルします
+          var $parentDl = $(this).closest('dl'); // クリックしたdtの親の<dl>を取得
+          $parentDl.find('dd').first().slideToggle();
+          $parentDl.toggleClass('open');
+      });
+  });
+  
 
 /*********************************
 	shuffle
@@ -135,4 +149,25 @@ $(document).ready(function() {
 
 
 
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+  $(function () {
+    const headNav = $('.page-header');
+    $(window).scroll(function () {
+      // スクロール量が200px以上かつクラスfixedが付与されていないとき
+      if($(this).scrollTop() > 200 && headNav.hasClass('fixed') == false) {
+        //headerの高さ分上に設定（上から下りてくる動きにするため）
+        headNav.css({top: '-100px'});
+        //クラスfixedを付与
+        headNav.addClass('fixed');
+        //位置を0に設定し、上から下りてくるスピードを設定
+        headNav.animate({top: 0},1000);
+      }
+      // スクロール量が200px以下かつクラスfixedが付与されているとき
+      else if($(this).scrollTop() < 200 && headNav.hasClass('fixed') == true){
+        // クラスfixedを外す
+        headNav.removeClass('fixed');
+      }
+    });
+  });
+}
 

@@ -9,6 +9,42 @@ h2.sp_ttl {
     padding-bottom: 8px;
     margin-bottom: 82px;
 }
+.top_container {
+    width: 68.75%;
+    margin: auto;
+    @media screen and (max-width: 768px) {
+        width: 84%;
+    }
+}
+.sec_ttl {
+    text-align: left;
+    margin-bottom: 7rem;
+    span {
+        font-size: clamp(24px,3.2rem,40px);
+        display: block;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+    }
+    small {
+        font-size: 14px;
+        display: block;
+        font-weight: normal;
+    }
+}
+#concept {
+    padding-top: 35rem;
+    span.catch {
+        font-size: clamp(16px,1.6rem,20px);
+        letter-spacing: 0.05em;
+        display: block;
+        margin-bottom: 5rem;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.875em;
+        letter-spacing: 0.05em;
+    }
+}
 .profile_wrap {
     margin-bottom: 100px;
     h1 {
@@ -46,17 +82,7 @@ h2.sp_ttl {
         }
     }
 }
-section {
-    h2 {
-        margin-bottom: 40px;
-        font-size: 16px;
-        letter-spacing: 0.05em;
-        font-weight: 500;
-        @media screen and (max-width: 768px) {
-            color: #B4B4B4;
-        }
-    }
-}
+
 
 .story_wrap {
     margin-bottom: 180px;
@@ -123,6 +149,41 @@ section {
             }
         }
     }
+}
+
+#company {
+    padding-bottom: 30rem;
+    .company_info {
+        width: 80%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        dl {
+            font-size: 16px;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            border-bottom: 1px solid #000;
+            letter-spacing: 0.1em;
+            @media screen and (max-width: 768px) {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+            }
+            dt {
+            width: 20%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+          }
+          dd {
+            width: 80%;
+            line-height: 1.75;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+          }
+        }
+      }
 }
 
 .contact {

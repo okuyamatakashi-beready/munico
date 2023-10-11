@@ -33,26 +33,27 @@
         </a>
         <ul class="center_nav flex pc_flex">
             <li>
-                <a href="/movie" class="js_typing">MOVIE</a>
+                <a href="#movie" class="js_typing">MOVIE</a>
             </li>
             <li>
-                <a href="/photo" class="js_typing">PHOTO</a>
+                <a href="#photo" class="js_typing">PHOTO</a>
             </li>
             <li>
-                <a href="/brand" class="js_typing">BRAND</a>
+                <a href="#brand" class="js_typing">BRAND</a>
             </li>
             <li>
-                <a href="/salon" class="js_typing">SALON</a>
+                <a href="#salon" class="js_typing">SALON</a>
             </li>
             <li>
-                <a href="/company" class="js_typing">COMPANY</a>
+                <a href="#company" class="js_typing">COMPANY</a>
             </li>
             <li>
-                <a href="/photo" class="js_typing">ABOUT</a>
+                <a href="/about" class="js_typing">ABOUT</a>
             </li>
             <li>
-                <a href="/photo" class="js_typing">CONTACT</a>
+                <a href="/contact" class="js_typing">CONTACT</a>
             </li>
+
 
         </ul>
 
@@ -61,7 +62,7 @@
 
     <div class="sp_nav sp">
         <dl class="active">
-            <dt><a href="/movie">MOVIE</a></dt>
+            <dt>MOVIE</dt>
             <dd>
                 <ul class="flex">
                     <li>
@@ -98,7 +99,7 @@
             </dd>
         </dl>
         <dl class="active">
-            <dt><a href="/photo">PHOTO</a></dt>
+            <dt>PHOTO</dt>
             <dd>
                 <ul class="flex">
                     <li>
@@ -125,8 +126,63 @@
                 </ul>
             </dd>
         </dl>
+        <dl class="active">
+            <dt>BRAND</dt>
+            <dd>
+                <ul class="h_brand flex">
+                
+
+                <?php
+                    $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
+                    $args = array(
+                        'posts_per_page' => '15', //表示件数。-1なら全件表示
+                        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
+                        'paged' => $paged,
+                        'post_type' => 'brand',
+                            );
+                ?>
+                <?php $wp_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
+
+                <?php if ( $wp_query->have_posts() ) :
+
+                    while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+                    <?php 
+                        $brand_logo = get_field('brand_logo');
+                        $brand_url = get_field('brand_url');
+                        ?>
+					<li>
+						<a href="<?php echo $brand_url;?>">
+                            <div class="thumbnail bg" style="background-image: url(<?php echo $brand_logo;?>)"></div>
+						</a>
+					</li>
+
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>	
+
+				</ul>
+            </dd>
+        </dl>
         <dl>
-            <dt>SEMINAR</dt>
+            <dt><a href="#salon">SALON</a></dt>
+            <dd>
+
+            </dd>
+        </dl>
+        <dl>
+            <dt><a href="#company">COMPANY</a></dt>
+            <dd>
+
+            </dd>
+        </dl>
+        <dl>
+            <dt><a href="/about">ABOUT</a></dt>
+            <dd>
+
+            </dd>
+        </dl>
+        <dl>
+            <dt><a href="/contact">CONTACT</a></dt>
             <dd>
 
             </dd>
@@ -136,7 +192,7 @@
 </header>
 
 
-<div id="toggle">
+<div id="toggle" class="sp">
     <div class="toggle_wrap">
         <span></span>
         <span></span>

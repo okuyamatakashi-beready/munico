@@ -1,66 +1,32 @@
 <?php get_header(); ?>
 
 <main id="main">
-	<div class="main_container">
-		<div class="sidebar">
-			<h2>ABOUT</h2>
-			<ul>
-				<li>
-					<a href="/cat_movie/promotion" id="profile_link" class="js_typing">Profile</a>
-				</li> 
-				<li>
-					<a href="" id="story_link" class="js_typing">Story</a>
-				</li>
-				<li>
-					<a href="" id="price_link" class="js_typing">Price</a>
-				</li>
-				<li>
-					<a href="" id="contact_link" class="js_typing">Contact</a>
-				</li>
-			</ul>
-		</div>
-		<!-- //sidebar -->
+    <div class="top_container">
+        <section id="concept">
+            <h2 class="sec_ttl">
+                <span>Concept</span>
+                <small>コンセプト</small>
+            </h2>
 
-		<div class="main_content">
-            <h2 class="sp_ttl sp">ABOUT</h2>
-            <section id="profile" class="profile_wrap now">
-                <span class="profile_ttl_sp sp">Profile</span>
-                <h1>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg" alt="munico">
-                </h1>
-            
-                <ul>
-                    <li>
-                        <p>フリーランスクリエイター</p>
-                        <a href="" target="_blank">@munico_625</a>
-                    </li>
+            <span class="catch">コンセプトテキストが入ります。コンセプトテキストが入ります。</span>
 
-                    <li><p>photo｜movie｜illustration｜animation｜<br class="sp">graphic design</p></li>
+            <p>
+            コンセプトテキストが入ります。コンセプトテキストが入ります。コンセプトテキストが入ります。<br>
+            コンセプトテキストが入ります。コンセプトテキストが入ります。コンセプトテキストが入ります。<br>
+            コンセプトテキストが入ります。コンセプトテキストが入ります。コンセプトテキストが入ります。<br>
+            コンセプトテキストが入ります。コンセプトテキストが入ります。<br>
+            コンセプトテキストが入ります。コンセプトテキストが入ります。<br><br>
 
-                    <li>
-                        <p>
-                            会社名　株式会社munico<br>
-                            設立　2021/2/2
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <!-- /profile_wrap  -->
+            コンセプトテキストが入ります。コンセプトテキストが入ります。コンセプトテキストが入ります。
+            </p>
 
-            <section id="story" class="story_wrap now">
-                <h2>Story</h2>
-                <p>
-                municoとして活動するまでの経歴だったり、現在の思いやビジョンなど、簡単なストーリーをご紹介できるといいなと思います。municoとして活動するまでの経歴だったり、現在の思いやビジョンなど、簡単なストーリーをご紹介できるといいなと思います。municoとして活動するまでの経歴だったり、現在の思いやビジョンなど、簡単なストーリーをご紹介できるといいなと思います。municoとして活動するまでの経歴だったり、現在の思いやビジョンなど、簡単なストーリーをご紹介できるといいなと思います。municoとして活動するまでの経歴だったり、現在の思いやビジョンなど、簡単なストーリーをご紹介できるといいなと思います。municoとして活動するまでの経歴だったり、現在の思いやビジョンなど、簡単なストーリーをご紹介できるといいなと思います。municoとして活動するまでの経歴だったり、現在の思いやビジョンなど、簡単なストーリーをご紹介できるといいなと思います。
-                </p>
-            </section>
-            <!-- /story_wrap -->
-
-		</div>
-		<!-- //main_content -->
-
+        </section>
         <section id="price" class="price_wrap now">
-            <div class="main_content">
-                <h2>Price</h2>
+            <div class="">
+                <h2 class="sec_ttl">
+                    <span>Price</span>
+                    <small>価格帯</small>
+                </h2>
                 <dl>
                     <dt><span>セット（素材撮影・動画制作）</span><br class="sp">¥00,000〜</dt>
                     <dd>
@@ -93,40 +59,41 @@
         </section>
         <!-- /price_wrap -->
 
-        <section id="contact" class="contact now">
-            <div class="main_content">
-                <h2>Contact</h2>
-                <?php echo do_shortcode('[contact-form-7 id="444" title="munico様お問い合わせフォーム"]'); ?>
+        <section id="company">
+            <h2 class="sec_ttl">
+                <span>Company</span>
+                <small>会社概要</small>
+            </h2>
 
-                <!-- <dl>
-                    <dt>お名前 *</dt>
-                    <dd>[text* namae]</dd>
+            <div class="company_info">
+                <dl class="flex">
+                    <dt>会社名</dt>
+                    <dd>株式会社munico</dd>
                 </dl>
-                <dl>
-                    <dt>フリガナ</dt>
-                    <dd>[text furigana]</dd>
+                <dl class="flex">
+                    <dt>所在地</dt>
+                    <dd>〒150-0001 東京都渋谷区神宮前5丁目40-10 METROCA 103</dd>
                 </dl>
-                <dl>
-                    <dt>メールアドレス *</dt>
-                    <dd>[email* email]</dd>
+                <dl class="flex">
+                    <dt>設立</dt>
+                    <dd>2021/2/2</dd>
                 </dl>
-                <dl>
-                    <dt>お電話番号</dt>
-                    <dd>[tel tel-number]</dd>
+                <dl class="flex">
+                    <dt>代表者</dt>
+                    <dd>munico（nao,kiyo）</dd>
                 </dl>
-                <dl>
-                    <dt>お問い合わせ内容 *</dt>
-                    <dd>[textarea* naiyo]</dd>
+                <dl class="flex">
+                    <dt>事業内容</dt>
+                    <dd>photo｜movie｜illustration｜animation｜graphic design｜salon</dd>
                 </dl>
-
-                <div class="btn_wrap">
-                [submit class:contact_btn "確認"]
-                </div> -->
             </div>
+
         </section>
-        <!-- /contact -->
-	</div>
-	<!-- //main_container -->
+
+
+
+    </div>
+
 </main>
 
 <?php get_footer(); ?>
