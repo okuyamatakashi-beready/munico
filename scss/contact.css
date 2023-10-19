@@ -168,6 +168,7 @@ br.pc {
     z-index: 9999;
     pointer-events: none;
     background: none;
+    border-bottom: none;
   }
   #header > a.h_logo {
     width: 100px;
@@ -306,7 +307,7 @@ br.pc {
   height: 1px;
   background-color: #000;
   position: absolute;
-  top: 15px;
+  top: 12px;
   right: 0;
 }
 #header .sp_nav dl.active::after {
@@ -315,7 +316,7 @@ br.pc {
   height: 20px;
   background-color: #000;
   position: absolute;
-  top: 6px;
+  top: 3px;
   right: 9px;
   transition: all 0.3s;
 }
@@ -330,7 +331,7 @@ br.pc {
   opacity: 0;
 }
 #header .sp_nav dl dt {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.05em;
   margin-bottom: 10px;
@@ -351,7 +352,7 @@ br.pc {
 }
 #header .sp_nav dl dd ul li a {
   color: #A2A2A2;
-  font-size: 16px;
+  font-size: 14px;
 }
 #header .sp_nav dl dd ul.h_brand {
   justify-content: space-between;
@@ -383,7 +384,7 @@ br.pc {
     height: 97vh;
     margin-top: 0;
     padding-top: 60px;
-    padding-bottom: 0;
+    padding-bottom: 100px;
     align-items: flex-start;
     display: block;
     pointer-events: all;
@@ -640,6 +641,8 @@ a.back_btn {
   #footer .ft_logo {
     width: 100px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 #footer .ft_logo a img {
@@ -692,6 +695,39 @@ a.back_btn {
 #footer .ft_wrap dl dd a {
   color: #000;
 }
+#footer .ft_wrap .ft_sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #footer .ft_wrap .ft_sp {
+    display: block;
+    width: 100%;
+  }
+  #footer .ft_wrap .ft_sp ul {
+    margin-bottom: 10px;
+  }
+  #footer .ft_wrap .ft_sp ul li a {
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 2;
+  }
+  #footer .ft_wrap .ft_sp ul.fst {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #footer .ft_wrap .ft_sp ul.second {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #footer .ft_wrap .ft_sp a.ft_sp_insta {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
 #footer .fixed_insta_link {
   right: 20%;
   top: 9.5rem;
@@ -713,7 +749,9 @@ a.back_btn {
     width: 100%;
   }
   #footer .ft_contact a.contact_btn {
-    width: 100%;
+    width: 230px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 60px;
     font-size: 14px;
   }
@@ -728,7 +766,8 @@ a.back_btn {
 @media screen and (max-width: 768px) {
   #footer .ft_contact small {
     font-size: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
+    text-align: center;
   }
 }
 

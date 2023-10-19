@@ -1,5 +1,19 @@
 <?php get_header(); ?>
 
+<?php if( have_posts()): while( have_posts()): the_post(); ?>
+<?php 
+    $concept_catch = get_field('concept_catch,17');
+    $concept_text = get_field('concept_text');
+    $set_ttl = get_field('set_ttl');
+    $set_price = get_field('set_price');
+    $set_info = get_field('set_info');
+    $single_ttl = get_field('single_ttl');
+    $single_price = get_field('single_price');
+    $single_info = get_field('single_info');
+    $movie_ttl = get_field('movie_ttl');
+    $movie_price = get_field('movie_price');
+    $movie_info = get_field('movie_info');
+    ?>
 <main id="main">
     <div class="top_container">
         <section id="concept">
@@ -95,5 +109,7 @@
     </div>
 
 </main>
+<?php endwhile; else: ?>
+<?php endif; ?> 
 
 <?php get_footer(); ?>

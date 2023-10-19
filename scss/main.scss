@@ -27,7 +27,7 @@ img.top_logo {
   width: 68.75%;
   margin: auto;
   @media screen and (max-width: 768px) {
-      width: 84%;
+      width: 100%;
   }
 }
 .sec_ttl {
@@ -43,6 +43,9 @@ img.top_logo {
     font-size: 14px;
     display: block;
     font-weight: normal;
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
   }
 }
 a.more_btn {
@@ -57,9 +60,16 @@ a.more_btn {
   padding: 20px 0;
   letter-spacing: 0.1em;
   margin-top: 10rem;
+  @media screen and (max-width: 768px) {
+      width: 220px;
+      padding: 15px 0;
+  }
 }
 #movie {
   padding-top: 30rem;
+  @media screen and (max-width: 768px) {
+      padding-top: 110px;
+  }
 }
 .movie_work_list {
   @media screen and (max-width: 768px) {
@@ -121,7 +131,7 @@ a.more_btn {
     ul {
         justify-content: flex-start;
         @media screen and (max-width: 768px) {
-            width: 84.615%;
+            width: 100%;
             margin: 0 auto;
             justify-content: space-between;
         }
@@ -179,6 +189,10 @@ a.more_btn {
       padding-top: 120px;
   }
   ul.salon_list {
+    @media screen and (max-width: 768px) {
+        width: 83.5%;
+        margin: auto;
+    }
     li {
       width: 32%;
       @media screen and (max-width: 768px) {
@@ -250,6 +264,7 @@ a.more_btn {
   padding-bottom: 25rem;
   @media screen and (max-width: 768px) {
       padding-top: 120px;
+      padding-bottom: 120px;
   }
   h1 {
     text-align: left;
@@ -257,6 +272,7 @@ a.more_btn {
         text-align: center;
         display: block;
         width: 100%;
+        margin-bottom: 40px;
     }
   }
   .company_wrap {
@@ -265,7 +281,8 @@ a.more_btn {
   .company_info {
     width: 60%;
     @media screen and (max-width: 768px) {
-        width: 100%;
+        width: 83.5%;
+        margin: auto;
     }
     dl {
       font-size: 16px;
@@ -276,6 +293,7 @@ a.more_btn {
       @media screen and (max-width: 768px) {
           padding-bottom: 15px;
           margin-bottom: 15px;
+          font-size: 14px;
       }
       dt {
         width: 20%;
@@ -287,6 +305,7 @@ a.more_btn {
       dd {
         width: 80%;
         line-height: 1.75;
+        word-break: break-all;
         @media screen and (max-width: 768px) {
             width: 100%;
         }

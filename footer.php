@@ -8,10 +8,39 @@
 		<div class="ft_wrap flex pc_flex">
 
 
-			<div class="fixed_insta_link">
+			<div class="fixed_insta_link pc">
 				<a href="https://www.instagram.com/munico_625/" target="_blank">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/common/insta_icon.svg" alt="">
 				</a>
+			</div>
+
+			<div class="ft_sp">
+				<ul class="flex fst">
+					<li>
+						<a href="">MOVIE</a>
+					</li>
+					<li>
+						<a href="">PHOTO</a>
+					</li>
+				</ul>
+				<ul class="flex second">
+					<li>
+						<a href="">BRAND</a>
+					</li>
+					<li>
+						<a href="">SALON</a>
+					</li>
+					<li>
+						<a href="">COMPANY</a>
+					</li>
+					<li>
+						<a href="">ABOUT</a>
+					</li>
+				</ul>
+				<a href="https://www.instagram.com/munico_625/" target="_blank" class="ft_sp_insta">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/common/insta_icon.svg" alt="">
+				</a>
+
 			</div>
 
 			<div class="ft_contact">
@@ -23,6 +52,8 @@
 			</div>
 		</div>
 		<!-- //ft_wrap -->
+
+		
 
 		
 

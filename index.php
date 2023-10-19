@@ -294,7 +294,7 @@
 			</div>
 			<!-- //work_list -->
 
-            <a href="/movie" class="more_btn">MORE</a>
+            <a href="/photo" class="more_btn">MORE</a>
         </div>
         <!-- //top_container -->
     </section>

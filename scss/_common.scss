@@ -140,6 +140,7 @@ br.pc {
         z-index: 9999;
         pointer-events: none;
         background: none;
+        border-bottom: none;
         & > a.h_logo {
             width: 100px;
             position: fixed;
@@ -266,7 +267,7 @@ br.pc {
                     height: 1px;
                     background-color: #000;
                     position: absolute;
-                    top: 15px;
+                    top: 12px;
                     right: 0;
                 }
                 &::after {
@@ -275,7 +276,7 @@ br.pc {
                     height: 20px;
                     background-color: #000;
                     position: absolute;
-                    top: 6px;
+                    top: 3px;
                     right: 9px;
                     transition: all 0.3s;
                 }
@@ -293,7 +294,7 @@ br.pc {
                 }
             }
             dt {
-                font-size: 22px;
+                font-size: 16px;
                 font-weight: 500;
                 letter-spacing: 0.05em;
                 margin-bottom: 10px;
@@ -316,7 +317,7 @@ br.pc {
                         padding-left: 2%;
                         a {
                             color: #A2A2A2;
-                            font-size: 16px;
+                            font-size: 14px;
                             
                         }
                     }
@@ -339,6 +340,7 @@ br.pc {
         }
     }
 }
+
 .open #header {
     background-color: #F5F5F5;
     padding-top: 60px;
@@ -350,7 +352,7 @@ br.pc {
         height: 97vh;
         margin-top: 0;
         padding-top: 60px;
-        padding-bottom: 0;
+        padding-bottom: 100px;
         align-items: flex-start;
         display: block;
         pointer-events: all;
@@ -583,6 +585,8 @@ a.back_btn {
         @media screen and (max-width: 768px) {
             width: 100px;
             margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
         }
         a {
             img {
@@ -629,6 +633,40 @@ a.back_btn {
                 }
             }
         }
+
+        .ft_sp {
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+                width: 100%;;
+                ul {
+                    margin-bottom: 10px;
+                    li {
+                        a {
+                            color: #000;
+                            font-size: 12px;
+                            letter-spacing: 0.1em;
+                            line-height: 2;
+                        }
+                    }
+                }
+                ul.fst {
+                    width: 40%;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                ul.second {
+                    width: 90%;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                a.ft_sp_insta {
+                    display: block;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+            }
+        }
     }
 
     .fixed_insta_link {
@@ -647,7 +685,9 @@ a.back_btn {
             position: inherit;
             width: 100%;
             a.contact_btn {
-                width: 100%;
+                width: 230px;
+                margin-right: auto;
+                margin-left: auto;
                 margin-top: 60px;
                 font-size: 14px;
             }
@@ -660,7 +700,8 @@ a.back_btn {
             margin-top: 20px;
             @media screen and (max-width: 768px) {
                 font-size: 10px;
-                margin-top: 10px;
+                margin-top: 15px;
+                text-align: center;
             }
         }
     }
