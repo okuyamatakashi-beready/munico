@@ -54,10 +54,10 @@
         </a>
         <ul class="center_nav flex pc_flex">
             <li>
-                <a href="#movie" class="js_typing">MOVIE</a>
+                <a href="/movie" class="js_typing">MOVIE</a>
             </li>
             <li>
-                <a href="#photo" class="js_typing">PHOTO</a>
+                <a href="/photo" class="js_typing">PHOTO</a>
             </li>
             <li>
                 <a href="#brand" class="js_typing">BRAND</a>
