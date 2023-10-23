@@ -230,11 +230,11 @@
                         'post_type' => 'work-movie',
                             );
                 ?>
-                <?php $wp_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
+                <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
 
-                <?php if ( $wp_query->have_posts() ) :
+                <?php if ( $my_query->have_posts() ) :
 
-                    while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+                    while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
                     <li>
                         <a href="<?php the_permalink(); ?>">
                             <div class="thumbnail bg" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)"></div>
