@@ -161,11 +161,11 @@
                         'post_type' => 'brand',
                             );
                 ?>
-                <?php $wp_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
+                <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
 
-                <?php if ( $wp_query->have_posts() ) :
+                <?php if ( $my_query->have_posts() ) :
 
-                    while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+                    while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
                     <?php 
                         $brand_logo = get_field('brand_logo');
                         $brand_url = get_field('brand_url');

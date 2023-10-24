@@ -931,7 +931,7 @@ h2.sp_ttl {
 }
 
 .price_wrap {
-  width: 100vw;
+  width: 100%;
   background-color: #F5F5F5;
   padding: 180px 0 120px 0;
 }

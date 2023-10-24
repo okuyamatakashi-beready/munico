@@ -58,7 +58,7 @@
 
 				<div class="works_info">
 					<div class="works_ttl flex">
-						<h1><?php the_title(); ?></h1>
+						<h1><?php the_title(); ?><?php the_permalink();?></h1>
 						<?php if($works_name): ?>
 							<h3><?php echo $works_name;?></h3>
 						<?php endif; ?>
