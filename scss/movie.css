@@ -290,6 +290,7 @@ br.pc {
   position: relative;
   z-index: -1;
   pointer-events: none;
+  border-top: 1px solid #000;
 }
 @media screen and (max-width: 768px) {
   #header .sp_nav {
@@ -297,7 +298,10 @@ br.pc {
   }
 }
 #header .sp_nav dl {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+}
+#header .sp_nav dl:first-of-type dt {
+  margin-top: 12px;
 }
 #header .sp_nav dl.active {
   position: relative;
@@ -429,7 +433,7 @@ br.pc {
 }
 @media screen and (max-width: 768px) {
   .open #header .sp_nav {
-    margin-top: 8%;
+    margin-top: 60px;
   }
 }
 

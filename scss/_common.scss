@@ -254,11 +254,18 @@ br.pc {
         position: relative;
         z-index: -1;
         pointer-events: none;
+        border-top: 1px solid #000;
         @media screen and (max-width: 768px) {
             background-color: #f5f5f5;
         }
         dl {
-            margin-bottom: 30px;
+            margin-bottom: 12px;
+            &:first-of-type {
+                
+                dt {
+                    margin-top: 12px;
+                }
+            }
             &.active {
                 position: relative;
                 &::before {
@@ -389,7 +396,7 @@ br.pc {
         pointer-events: visible;
         margin-bottom: 0;
         @media screen and (max-width: 768px) {
-            margin-top: 8%;
+            margin-top: 60px;
         }
     }
 }
