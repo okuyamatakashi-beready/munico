@@ -523,7 +523,7 @@ br.pc {
 
 .main_container {
   width: 91.66%;
-  margin: 200px 8.334% 260px auto;
+  margin: 66px 8.334% 260px auto;
   position: relative;
 }
 @media screen and (max-width: 768px) {
