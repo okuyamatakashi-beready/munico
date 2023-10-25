@@ -57,6 +57,11 @@ br.pc {
   padding: 15px 0;
 }
 
+input.contact_btn {
+  background-color: #000000;
+  color: #fff;
+}
+
 .top_border {
   position: fixed;
   border-top: 5px #000 solid;
@@ -176,6 +181,7 @@ br.pc {
     top: 30px;
     left: 30px;
     z-index: 9999;
+    pointer-events: all;
   }
   #header > a.h_logo img {
     width: 100%;
@@ -215,9 +221,11 @@ br.pc {
   }
 }
 #header .gnav ul.center_nav li {
-  width: 8%;
+  width: auto;
+  flex-basis: 80px;
   font-weight: bold;
   text-align: center;
+  text-align: left;
   margin-right: 6rem;
 }
 #header .gnav ul.center_nav li a {
@@ -226,6 +234,14 @@ br.pc {
   color: #000;
   letter-spacing: 0.1em;
   line-height: 34px;
+}
+#header .gnav ul.center_nav li:nth-child(5) {
+  flex-basis: 120px;
+  margin-right: 4rem;
+}
+#header .gnav ul.center_nav li:nth-child(7) {
+  flex-basis: 120px;
+  margin-right: 4rem;
 }
 #header .gnav ul.side_nav {
   position: absolute;

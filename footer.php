@@ -17,24 +17,24 @@
 			<div class="ft_sp">
 				<ul class="flex fst">
 					<li>
-						<a href="">MOVIE</a>
+						<a href="/movie">MOVIE</a>
 					</li>
 					<li>
-						<a href="">PHOTO</a>
+						<a href="/photo">PHOTO</a>
 					</li>
 				</ul>
 				<ul class="flex second">
 					<li>
-						<a href="">BRAND</a>
+						<a href="/#brand">BRAND</a>
 					</li>
 					<li>
-						<a href="">SALON</a>
+						<a href="/#salon">SALON</a>
 					</li>
 					<li>
-						<a href="">COMPANY</a>
+						<a href="/#company">COMPANY</a>
 					</li>
 					<li>
-						<a href="">ABOUT</a>
+						<a href="/about">ABOUT</a>
 					</li>
 				</ul>
 				<a href="https://www.instagram.com/munico_625/" target="_blank" class="ft_sp_insta">

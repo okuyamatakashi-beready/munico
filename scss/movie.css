@@ -58,6 +58,11 @@ br.pc {
   padding: 15px 0;
 }
 
+input.contact_btn {
+  background-color: #000000;
+  color: #fff;
+}
+
 .top_border {
   position: fixed;
   border-top: 5px #000 solid;
@@ -177,6 +182,7 @@ br.pc {
     top: 30px;
     left: 30px;
     z-index: 9999;
+    pointer-events: all;
   }
   #header > a.h_logo img {
     width: 100%;
@@ -216,9 +222,11 @@ br.pc {
   }
 }
 #header .gnav ul.center_nav li {
-  width: 8%;
+  width: auto;
+  flex-basis: 80px;
   font-weight: bold;
   text-align: center;
+  text-align: left;
   margin-right: 6rem;
 }
 #header .gnav ul.center_nav li a {
@@ -227,6 +235,14 @@ br.pc {
   color: #000;
   letter-spacing: 0.1em;
   line-height: 34px;
+}
+#header .gnav ul.center_nav li:nth-child(5) {
+  flex-basis: 120px;
+  margin-right: 4rem;
+}
+#header .gnav ul.center_nav li:nth-child(7) {
+  flex-basis: 120px;
+  margin-right: 4rem;
 }
 #header .gnav ul.side_nav {
   position: absolute;
@@ -1078,7 +1094,9 @@ li.movie_promotion {
 }
 @media screen and (max-width: 768px) {
   .other_list {
-    margin-left: -9%;
+    width: 93vw;
+    margin-left: calc(50% - 43vw);
+    box-sizing: border-box;
   }
 }
 .other_list .other_list_wrap {
@@ -1117,26 +1135,42 @@ li.movie_promotion {
   .other_list .other_list_wrap .other_list_inner h4 {
     font-size: 12px;
     margin-bottom: 10px;
-    width: 84.615%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-.other_list .other_list_wrap .other_list_inner ul li {
+.other_list .other_list_wrap .other_list_inner .other_slider .slick-list {
+  padding: 0 30px 0 0 !important;
+}
+.other_list .other_list_wrap .other_list_inner .other_slider .other_slide {
   width: 32.116%;
 }
 @media screen and (max-width: 768px) {
-  .other_list .other_list_wrap .other_list_inner ul li {
-    width: 100%;
+  .other_list .other_list_wrap .other_list_inner .other_slider .other_slide {
+    width: auto;
     margin-right: 0.8%;
   }
 }
-.other_list .other_list_wrap .other_list_inner ul li a div.thumbnail {
+@media screen and (max-width: 768px) {
+  .other_list .other_list_wrap .other_list_inner .other_slider .other_slide a {
+    width: 330px;
+    display: block;
+  }
+}
+.other_list .other_list_wrap .other_list_inner .other_slider .other_slide a div.thumbnail {
   width: 100%;
   padding: 27.608% 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .other_list .other_list_wrap .other_list_inner .other_slider .other_slide a div.thumbnail {
+    height: 206px;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /*********************************

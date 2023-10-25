@@ -58,7 +58,6 @@
 
 				<div class="works_info">
 					<div class="works_ttl flex">
-						<h1><?php the_title(); ?></h1>
 						<?php if($works_name): ?>
 							<h3><?php echo $works_name;?></h3>
 						<?php endif; ?>
@@ -95,35 +94,28 @@
 				<div class="other_list_inner">
 					<h4>Ohter</h4>
 
-					<ul class="flex">
+					<div class="other_slider flex">
 
 					<?php
-						$terms_name = get_the_terms($post->ID,'cat_movie');
-						$paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
-						$args = array(
-							'posts_per_page' => '3', //表示件数。-1なら全件表示
-							'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-							'paged' => $paged,
-							'tax_query' => array(
-									array(
-										'taxonomy' => 'cat_movie',
-										'field' => 'slug',
-										'terms' => 'promotion',
-										),
-									),
-								);
-					?>
+                    $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
+                    $args = array(
+                        'posts_per_page' => '3', //表示件数。-1なら全件表示
+                        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
+                        'paged' => $paged,
+                        'post_type' => 'work-movie',
+                            );
+                ?>
 					<?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
 
 					<?php if ( $my_query->have_posts() ) :
 
 						while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
-						<li>
-							<a href="/movie/<?php echo $terms;?>">
+						<div class="other_slide">
+							<a href="<?php the_permalink();?>">
 								<div class="thumbnail bg" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)"></div>
 							</a>
-						</li>
+						</div>
 
 					<?php endwhile; ?>
 					<?php endif; ?>
@@ -134,11 +126,15 @@
 			</div>
 			<!-- /other_list_wrap -->
 
-			<a href="/" class="back_btn">
-				BACK TO PAGE
-			</a>
+			
 		</div>
 		<!-- /other_list -->
+
+		<a href="/" class="back_btn">
+				BACK TO PAGE
+			</a>
+
+		
 	</div>
 	<!-- //main_container -->
 </main>

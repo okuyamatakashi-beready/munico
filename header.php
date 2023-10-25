@@ -60,13 +60,13 @@
                 <a href="/photo" class="js_typing">PHOTO</a>
             </li>
             <li>
-                <a href="#brand" class="js_typing">BRAND</a>
+                <a href="/#brand" class="js_typing">BRAND</a>
             </li>
             <li>
-                <a href="#salon" class="js_typing">SALON</a>
+                <a href="/#salon" class="js_typing">SALON</a>
             </li>
             <li>
-                <a href="#company" class="js_typing">COMPANY</a>
+                <a href="/#company" class="js_typing">COMPANY</a>
             </li>
             <li>
                 <a href="/about" class="js_typing">ABOUT</a>
@@ -184,13 +184,13 @@
             </dd>
         </dl>
         <dl>
-            <dt><a href="#salon">SALON</a></dt>
+            <dt><a href="/#salon">SALON</a></dt>
             <dd>
 
             </dd>
         </dl>
         <dl>
-            <dt><a href="#company">COMPANY</a></dt>
+            <dt><a href="/#company">COMPANY</a></dt>
             <dd>
 
             </dd>

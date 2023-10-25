@@ -274,7 +274,9 @@ li.movie_promotion {
     width: 100vw;
     margin-right: -8.334%;
     @media screen and (max-width: 768px) {
-        margin-left: -9%;
+        width: 93vw;
+        margin-left: calc(50% - 43vw);
+        box-sizing: border-box; 
     }
     .other_list_wrap {
         background-color: #F5F5F5;
@@ -304,24 +306,35 @@ li.movie_promotion {
                 @media screen and (max-width: 768px) {
                     font-size: 12px;
                     margin-bottom: 10px;
-                    width: 84.615%;
+                    width: 100%;
                     margin-left: auto;
                     margin-right: auto;
                 }
             }
-            ul {
-
-                li {
+            .other_slider {
+                .slick-list {
+                    padding: 0 30px 0 0!important;
+                }
+                .other_slide {
                     width: 32.116%;
                     @media screen and (max-width: 768px) {
-                        width: 100%;
+                        width: auto;
                         margin-right: 0.8%;
                     }
                     a {
+                    @media screen and (max-width: 768px) {
+                        width: 330px;
+                        display: block;
+                    }
                         div.thumbnail {
                             width: 100%;
                             padding: 27.608% 0;
                             @include v.bg;
+                            @media screen and (max-width: 768px) {
+                                height: 206px;
+                                width: 100%;
+                                padding: 0;
+                            }
                         } 
                     }
                 }

@@ -72,22 +72,20 @@ function init() {
 
 if(navigator.userAgent.match(/(iPhone|iPod|Android)/)){
   $(function(){    
-    $('.other_list .other_list_wrap .other_list_inner ul').slick({
-      autoplay:true,
+    $('.other_list .other_list_wrap .other_list_inner .other_slider').slick({
+      autoplay:false,
       autoplaySpeed:2000,
       dots:false,
       infinite:true,
       arrows: false, 
-      slidesToShow: 3.3,
+      centerMode: true,
+      slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [
         {
             breakpoint: 768, // 399px以下のサイズに適用
           settings: {
           slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "5%",
-          adaptiveHeight: true,
           },
         },
       ],
