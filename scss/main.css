@@ -898,6 +898,11 @@ a.more_btn {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 768px) {
+  .movie_work_list ul {
+    align-items: flex-start;
+  }
+}
 .movie_work_list ul li {
   width: 32.116%;
   margin-bottom: 30px;
@@ -927,11 +932,14 @@ a.more_btn {
   line-height: 30px;
   color: #000;
   font-weight: 500;
+  word-break: break-all;
 }
 @media screen and (max-width: 768px) {
   .movie_work_list ul li a h3 {
     font-size: 12px;
     font-weight: normal;
+    line-height: 1.5;
+    margin-top: 8px;
   }
 }
 
