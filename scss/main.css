@@ -1118,8 +1118,35 @@ a.more_btn {
 #company .company_wrap {
   align-items: flex-start;
 }
+#company .company_wrap .company_ttl_wrap {
+  width: 60%;
+  margin: 0 auto;
+}
+#company .company_wrap .company_ttl_wrap a.pc {
+  display: block;
+  margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  #company .company_wrap .company_ttl_wrap a.pc {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #company .company_wrap .company_ttl_wrap {
+    width: 83.5%;
+  }
+}
 #company .company_info {
   width: 60%;
+}
+#company .company_info a.sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #company .company_info a.sp {
+    display: block;
+    margin: 60px auto 0 auto;
+  }
 }
 @media screen and (max-width: 768px) {
   #company .company_info {

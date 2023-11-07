@@ -284,9 +284,30 @@ a.more_btn {
   }
   .company_wrap {
     align-items: flex-start;
+    .company_ttl_wrap {
+      width: 60%;
+      margin: 0 auto;
+      a.pc {
+        display: block;
+        margin-left: 0;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+      }
+      @media screen and (max-width: 768px) {
+          width: 83.5%;
+      }
+    }
   }
   .company_info {
     width: 60%;
+    a.sp {
+      display: none;
+      @media screen and (max-width: 768px) {
+          display: block;
+          margin: 60px auto 0 auto;
+      }
+    }
     @media screen and (max-width: 768px) {
         width: 83.5%;
         margin: auto;

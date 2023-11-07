@@ -33,19 +33,20 @@
         </a>
         <ul class="center_nav flex pc_flex">
             <li>
-                <a href="#movie" class="js_typing">MOVIE</a>
+                <a href="/#brand" class="js_typing">BRAND</a>
             </li>
             <li>
-                <a href="#photo" class="js_typing">PHOTO</a>
+                <a href="/#salon" class="js_typing">SALON</a>
             </li>
             <li>
-                <a href="#brand" class="js_typing">BRAND</a>
+                <a href="/photo" class="js_typing">PHOTO</a>
+            </li>
+
+            <li>
+                <a href="/movie" class="js_typing">MOVIE</a>
             </li>
             <li>
-                <a href="#salon" class="js_typing">SALON</a>
-            </li>
-            <li>
-                <a href="#company" class="js_typing">COMPANY</a>
+                <a href="/#company" class="js_typing">COMPANY</a>
             </li>
             <li>
                 <a href="/about" class="js_typing">ABOUT</a>
@@ -53,6 +54,8 @@
             <li>
                 <a href="/contact" class="js_typing">CONTACT</a>
             </li>
+
+
 
 
         </ul>
@@ -211,93 +214,6 @@
 <div class="left_border"></div>
 
 <main>
-
-    <section id="movie">
-        <h1 class="sec_ttl">
-            <span>MOVIE</span>
-            <small>動画</small>
-        </h1>
-        <div class="top_container">
-            <div class="movie_work_list">
-                <ul class="flex">
-
-                <?php
-                    $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
-                    $args = array(
-                        'posts_per_page' => '6', //表示件数。-1なら全件表示
-                        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-                        'paged' => $paged,
-                        'post_type' => 'work-movie',
-                            );
-                ?>
-                <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
-
-                <?php if ( $my_query->have_posts() ) :
-
-                    while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-                    <li>
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="thumbnail bg" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)"></div>
-                            <h3 class="works_title"><?php the_title(); ?></h3>
-                        </a>
-                    </li>
-
-                    <?php endwhile; ?>
-                    <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>	
-
-                </ul>
-            </div>
-            <!-- //work_list -->
-
-            <a href="/movie" class="more_btn">MORE</a>
-        </div>
-        <!-- //top_container -->
-    </section>
-
-    <section id="photo">
-        <h1 class="sec_ttl">
-            <span>PHOTO</span>
-            <small>写真</small>
-        </h1>
-        <div class="top_container">
-
-            <div class="movie_work_list photo_work_list">
-				<ul class="flex">
-
-                <?php
-                    $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
-                    $args = array(
-                        'posts_per_page' => '15', //表示件数。-1なら全件表示
-                        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-                        'paged' => $paged,
-                        'post_type' => 'work-photo',
-                            );
-                ?>
-                <?php $wp_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
-
-                <?php if ( $wp_query->have_posts() ) :
-
-                    while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-					<li>
-						<a href="<?php the_permalink(); ?>">
-                            <div class="thumbnail bg" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)"></div>
-                            <h3 class="works_title"><?php the_title(); ?></h3>
-						</a>
-					</li>
-
-                    <?php endwhile; ?>
-                    <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>	
-
-				</ul>
-			</div>
-			<!-- //work_list -->
-
-            <a href="/photo" class="more_btn">MORE</a>
-        </div>
-        <!-- //top_container -->
-    </section>
     <section id="brand">
         <h1 class="sec_ttl">
             <span>BRAND</span>
@@ -343,7 +259,6 @@
         </div>
         <!-- //top_container -->
     </section>
-
     <section id="salon">
         <h1 class="sec_ttl">
             <span>SALON</span>
@@ -392,13 +307,105 @@
         </div>
     </section>
 
+    <section id="photo">
+        <h1 class="sec_ttl">
+            <span>PHOTO</span>
+            <small>写真</small>
+        </h1>
+        <div class="top_container">
+
+            <div class="movie_work_list photo_work_list">
+				<ul class="flex">
+
+                <?php
+                    $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
+                    $args = array(
+                        'posts_per_page' => '15', //表示件数。-1なら全件表示
+                        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
+                        'paged' => $paged,
+                        'post_type' => 'work-photo',
+                            );
+                ?>
+                <?php $wp_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
+
+                <?php if ( $wp_query->have_posts() ) :
+
+                    while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+					<li>
+						<a href="<?php the_permalink(); ?>">
+                            <div class="thumbnail bg" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)"></div>
+                            <h3 class="works_title"><?php the_title(); ?></h3>
+						</a>
+					</li>
+
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>	
+
+				</ul>
+			</div>
+			<!-- //work_list -->
+
+            <a href="/photo" class="more_btn">MORE</a>
+        </div>
+        <!-- //top_container -->
+    </section>
+
+    <section id="movie">
+        <h1 class="sec_ttl">
+            <span>MOVIE</span>
+            <small>動画</small>
+        </h1>
+        <div class="top_container">
+            <div class="movie_work_list">
+                <ul class="flex">
+
+                <?php
+                    $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
+                    $args = array(
+                        'posts_per_page' => '6', //表示件数。-1なら全件表示
+                        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
+                        'paged' => $paged,
+                        'post_type' => 'work-movie',
+                            );
+                ?>
+                <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
+
+                <?php if ( $my_query->have_posts() ) :
+
+                    while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+                    <li>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="thumbnail bg" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)"></div>
+                            <h3 class="works_title"><?php the_title(); ?></h3>
+                        </a>
+                    </li>
+
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>	
+
+                </ul>
+            </div>
+            <!-- //work_list -->
+
+            <a href="/movie" class="more_btn">MORE</a>
+        </div>
+        <!-- //top_container -->
+    </section>
+
+
+
     <section id="company">
         <div class="top_container">
             <div class="company_wrap flex">
-                <h1 class="sec_ttl">
-                    <span>COMPANY</span>
-                    <small>会社概要</small>
-                </h1>
+                <div class="company_ttl_wrap">
+                    <h1 class="sec_ttl">
+                        <span>COMPANY</span>
+                        <small>会社概要</small>
+                    </h1>
+                    <a href="/about" class="more_btn pc">ABOUT</a>
+                </div>
                 <div class="company_info">
                     <dl class="flex">
                         <dt>会社名</dt>
@@ -420,11 +427,16 @@
                         <dt>事業内容</dt>
                         <dd>photo｜movie｜illustration｜animation｜graphic design｜salon</dd>
                     </dl>
+                    <a href="/about" class="more_btn sp">ABOUT</a>
                 </div>
 
             </div>
         </div>
     </section>
+
+
+
+
 </main>
 	
 
