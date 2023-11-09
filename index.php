@@ -301,8 +301,24 @@
             <!-- //salon_list -->
 
             <div class="salon_link_wrap flex">
-                <a href="https://www.instagram.com/novan.jp/" target="_blank" class="more_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/insta_icon.svg" alt="">instagram</a>
-                <a href="https://novan.jp/" target="_blank" class="more_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/shop_icon.svg" alt="">online shop</a>
+                <a href="https://www.instagram.com/novan.jp/" target="_blank" class="more_btn">
+                <svg width="25.006" height="25" viewBox="0 0 25.006 25">
+                    <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M12.5,8.328a6.41,6.41,0,1,0,6.41,6.41A6.4,6.4,0,0,0,12.5,8.328Zm0,10.577a4.167,4.167,0,1,1,4.167-4.167A4.175,4.175,0,0,1,12.5,18.9ZM20.667,8.066a1.5,1.5,0,1,1-1.5-1.5A1.492,1.492,0,0,1,20.667,8.066Zm4.245,1.517a7.4,7.4,0,0,0-2.019-5.238,7.447,7.447,0,0,0-5.238-2.019c-2.064-.117-8.251-.117-10.315,0A7.437,7.437,0,0,0,2.1,4.339,7.423,7.423,0,0,0,.083,9.578c-.117,2.064-.117,8.251,0,10.315A7.4,7.4,0,0,0,2.1,25.131,7.457,7.457,0,0,0,7.34,27.15c2.064.117,8.251.117,10.315,0a7.4,7.4,0,0,0,5.238-2.019,7.447,7.447,0,0,0,2.019-5.238c.117-2.064.117-8.245,0-10.309ZM22.246,22.107a4.219,4.219,0,0,1-2.376,2.376c-1.646.653-5.551.5-7.369.5s-5.729.145-7.369-.5a4.219,4.219,0,0,1-2.376-2.376c-.653-1.646-.5-5.551-.5-7.369s-.145-5.729.5-7.369A4.219,4.219,0,0,1,5.131,4.992c1.646-.653,5.551-.5,7.369-.5s5.729-.145,7.369.5a4.219,4.219,0,0,1,2.376,2.376c.653,1.646.5,5.551.5,7.369S22.9,20.467,22.246,22.107Z" transform="translate(0.005 -2.238)"/>
+                </svg>
+
+                    <span>instagram</span>
+                </a>
+                <a href="https://novan.jp/" target="_blank" class="more_btn">
+                <svg width="30.005" height="28.732" viewBox="0 0 30.005 28.732" class="shop_icon">
+                    <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(-0.5 -0.5)">
+                        <path id="パス_8" data-name="パス 8" d="M14.546,31.273A1.273,1.273,0,1,1,13.273,30,1.273,1.273,0,0,1,14.546,31.273Z" transform="translate(-1.589 -4.314)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                        <path id="パス_9" data-name="パス 9" d="M31.046,31.273A1.273,1.273,0,1,1,29.773,30,1.273,1.273,0,0,1,31.046,31.273Z" transform="translate(-4.087 -4.314)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                        <path id="パス_10" data-name="パス 10" d="M1.5,1.5H6.592L10,18.545a2.546,2.546,0,0,0,2.546,2.049H24.922a2.546,2.546,0,0,0,2.546-2.049L29.5,7.865H7.865" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    </g>
+                </svg>
+
+                    <span>online shop</span>
+                </a>
             </div>
         </div>
     </section>

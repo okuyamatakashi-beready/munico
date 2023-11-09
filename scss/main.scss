@@ -33,21 +33,28 @@ img.top_logo {
 .sec_ttl {
   text-align: center;
   margin-bottom: 7rem;
+  @media screen and (max-width: 768px) {
+      margin-bottom: 50px;
+  }
   span {
     font-size: clamp(24px,3.2rem,40px);
     display: block;
     letter-spacing: 0.1em;
     font-weight: 500;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
   }
   small {
     font-size: 14px;
     display: block;
     font-weight: normal;
     @media screen and (max-width: 768px) {
-        font-size: 12px;
+        font-size: 10px;
     }
   }
 }
+
 a.more_btn {
   display: block;
   background-color: #000;
@@ -60,6 +67,13 @@ a.more_btn {
   padding: 20px 0;
   letter-spacing: 0.1em;
   margin-top: 10rem;
+  transition: all 0.3s;
+  border: 1px solid #000;
+  &:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+  }
   @media screen and (max-width: 768px) {
       width: 220px;
       padding: 15px 0;
@@ -87,20 +101,20 @@ a.more_btn {
           width: 32.116%;
           margin-bottom: 30px;
           @media screen and (max-width: 768px) {
-              width: 49%;
+              width: 48%;
           }
           a {
               div.thumbnail {
                   width: 100%;
-                  padding: 27.608% 0;
+                  padding: 35.608% 0;
                   background-position: center center;
                   background-repeat: no-repeat;
-                  background-size: 100%;
-                  transition: all 0.1s;
+                  background-size: 130%;
+                  transition: background-size 0.3s ease-in-out;
                   box-sizing: border-box;
                   
                   &:hover {
-                      background-size: 110%;
+                      background-size: 150%;
                       outline: 2px solid #000;
                       outline-offset: -2px;
                   }
@@ -204,7 +218,7 @@ a.more_btn {
       width: 32%;
       @media screen and (max-width: 768px) {
           width: 100%;
-          margin-bottom: 50px;
+          margin-bottom: 70px;
       }
       .salon_thumb {
         padding-top: 70%;
@@ -221,7 +235,7 @@ a.more_btn {
           letter-spacing: 0.05em;
           font-weight: 500;
           @media screen and (max-width: 768px) {
-              margin-bottom: 15px;
+              margin-bottom: 10px;
           }
         }
         span.salon_cat {
@@ -230,7 +244,7 @@ a.more_btn {
           margin-bottom: 4rem;
           letter-spacing: 0.05em;
           @media screen and (max-width: 768px) {
-              margin-bottom: 30px;
+              margin-bottom: 17px;
           }
         }
         span.salon_address {
@@ -255,10 +269,41 @@ a.more_btn {
     margin-left: auto;
     @media screen and (max-width: 768px) {
         width: 100%;
+        a.more_btn {
+          margin-top: 0;
+          margin-bottom: 20px;
+        }
+    }
+    a {
+      transition: all 0.3s;
+      &:hover {
+        svg {
+          fill: #000;
+        }
+        .shop_icon {
+          stroke: #000;
+        }
+      }
+  
     }
     img {
       width: 10%;
+      padding-right: 8px;
+    }
+    svg {
+      width: 10%;
       padding-right: 10px;
+      vertical-align: middle;
+      fill: #fff;
+      transition: all 0.3s;
+      &.shop_icon {
+        stroke: #fff;
+        transition: all 0.3s;
+        
+      }
+    }
+    span {
+      vertical-align: middle;
     }
   }
 }

@@ -55,6 +55,12 @@ br.pc {
   letter-spacing: 0.18em;
   line-height: 1;
   padding: 15px 0;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+.contact_btn:hover {
+  color: #fff;
+  background-color: #000;
 }
 
 input.contact_btn {
@@ -841,11 +847,21 @@ img.top_logo {
   text-align: center;
   margin-bottom: 7rem;
 }
+@media screen and (max-width: 768px) {
+  .sec_ttl {
+    margin-bottom: 50px;
+  }
+}
 .sec_ttl span {
   font-size: clamp(24px, 3.2rem, 40px);
   display: block;
   letter-spacing: 0.1em;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .sec_ttl span {
+    font-size: 18px;
+  }
 }
 .sec_ttl small {
   font-size: 14px;
@@ -854,7 +870,7 @@ img.top_logo {
 }
 @media screen and (max-width: 768px) {
   .sec_ttl small {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -870,6 +886,13 @@ a.more_btn {
   padding: 20px 0;
   letter-spacing: 0.1em;
   margin-top: 10rem;
+  transition: all 0.3s;
+  border: 1px solid #000;
+}
+a.more_btn:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 @media screen and (max-width: 768px) {
   a.more_btn {
@@ -909,20 +932,20 @@ a.more_btn {
 }
 @media screen and (max-width: 768px) {
   .movie_work_list ul li {
-    width: 49%;
+    width: 48%;
   }
 }
 .movie_work_list ul li a div.thumbnail {
   width: 100%;
-  padding: 27.608% 0;
+  padding: 35.608% 0;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  transition: all 0.1s;
+  background-size: 130%;
+  transition: background-size 0.3s ease-in-out;
   box-sizing: border-box;
 }
 .movie_work_list ul li a div.thumbnail:hover {
-  background-size: 110%;
+  background-size: 150%;
   outline: 2px solid #000;
   outline-offset: -2px;
 }
@@ -1026,7 +1049,7 @@ a.more_btn {
 @media screen and (max-width: 768px) {
   #salon ul.salon_list li {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
 #salon ul.salon_list li .salon_thumb {
@@ -1049,7 +1072,7 @@ a.more_btn {
 }
 @media screen and (max-width: 768px) {
   #salon ul.salon_list li .salon_info h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 #salon ul.salon_list li .salon_info span.salon_cat {
@@ -1060,7 +1083,7 @@ a.more_btn {
 }
 @media screen and (max-width: 768px) {
   #salon ul.salon_list li .salon_info span.salon_cat {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
   }
 }
 #salon ul.salon_list li .salon_info span.salon_address {
@@ -1085,10 +1108,37 @@ a.more_btn {
   #salon .salon_link_wrap {
     width: 100%;
   }
+  #salon .salon_link_wrap a.more_btn {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+#salon .salon_link_wrap a {
+  transition: all 0.3s;
+}
+#salon .salon_link_wrap a:hover svg {
+  fill: #000;
+}
+#salon .salon_link_wrap a:hover .shop_icon {
+  stroke: #000;
 }
 #salon .salon_link_wrap img {
   width: 10%;
+  padding-right: 8px;
+}
+#salon .salon_link_wrap svg {
+  width: 10%;
   padding-right: 10px;
+  vertical-align: middle;
+  fill: #fff;
+  transition: all 0.3s;
+}
+#salon .salon_link_wrap svg.shop_icon {
+  stroke: #fff;
+  transition: all 0.3s;
+}
+#salon .salon_link_wrap span {
+  vertical-align: middle;
 }
 
 /*********************************

@@ -42,6 +42,12 @@ br.pc {
     letter-spacing: 0.18em;
     line-height: 1;
     padding: 15px 0;
+    transition: all 0.3s;
+    background-color: transparent;
+    &:hover {
+        color: #fff;
+        background-color: #000;
+    }
 }
 input.contact_btn {
     background-color: #000000;
