@@ -1219,7 +1219,7 @@ a.more_btn:hover {
   }
 }
 #company .company_info dl dt {
-  width: 20%;
+  width: 23%;
 }
 @media screen and (max-width: 768px) {
   #company .company_info dl dt {
@@ -1228,7 +1228,7 @@ a.more_btn:hover {
   }
 }
 #company .company_info dl dd {
-  width: 80%;
+  width: 77%;
   line-height: 1.75;
   word-break: break-all;
 }

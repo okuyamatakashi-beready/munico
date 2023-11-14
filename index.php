@@ -437,7 +437,7 @@
                     </dl>
                     <dl class="flex">
                         <dt>代表取締役</dt>
-                        <dd>munico（冨岡奈央、kiyo</dd>
+                        <dd>munico（冨岡奈央、kiyo）</dd>
                     </dl>
                     <dl class="flex">
                         <dt>事業内容</dt>
