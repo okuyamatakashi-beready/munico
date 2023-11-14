@@ -433,15 +433,15 @@
                     </dl>
                     <dl class="flex">
                         <dt>設立</dt>
-                        <dd>2021/2/2</dd>
+                        <dd>2020/12/10</dd>
                     </dl>
                     <dl class="flex">
-                        <dt>代表者</dt>
-                        <dd>munico（nao,kiyo）</dd>
+                        <dt>代表取締役</dt>
+                        <dd>munico（冨岡奈央、kiyo</dd>
                     </dl>
                     <dl class="flex">
                         <dt>事業内容</dt>
-                        <dd>photo｜movie｜illustration｜animation｜graphic design｜salon</dd>
+                        <dd>映像・写真、ブランドディレクション・デザイン、ヘアサロン運営、ネイルサロン運営、アパレル・化粧品の企画製造販売及び販売</dd>
                     </dl>
                     <a href="/about" class="more_btn sp">ABOUT</a>
                 </div>
