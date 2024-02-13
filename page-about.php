@@ -19,7 +19,6 @@
         <section id="concept">
             <h2 class="sec_ttl">
                 <span>Concept</span>
-                <small>コンセプト</small>
             </h2>
 
             <span class="catch">コンセプトテキストが入ります。コンセプトテキストが入ります。</span>
@@ -39,7 +38,6 @@
             <div class="">
                 <h2 class="sec_ttl">
                     <span>Price</span>
-                    <small>価格帯</small>
                 </h2>
                 <dl>
                     <dt><span>セット（素材撮影・動画制作）</span><br class="sp">¥00,000〜</dt>

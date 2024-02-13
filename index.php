@@ -217,7 +217,7 @@
     <section id="brand">
         <h1 class="sec_ttl">
             <span>BRAND</span>
-            <small>ブランド</small>
+            
         </h1>
         <div class="top_container">
 
@@ -262,7 +262,6 @@
     <section id="salon">
         <h1 class="sec_ttl">
             <span>SALON</span>
-            <small>サロン</small>
         </h1>
 
         <div class="top_container">
@@ -326,7 +325,6 @@
     <section id="photo">
         <h1 class="sec_ttl">
             <span>PHOTO</span>
-            <small>写真</small>
         </h1>
         <div class="top_container">
 
@@ -370,7 +368,6 @@
     <section id="movie">
         <h1 class="sec_ttl">
             <span>MOVIE</span>
-            <small>動画</small>
         </h1>
         <div class="top_container">
             <div class="movie_work_list">
